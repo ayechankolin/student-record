@@ -53,4 +53,8 @@ class Instructor(models.Model):
     def __str__(self):
         return self.name
 
-         
+class Blog(models.Model):
+
+    blog_title = models.CharField(max_length=255)
+    blog_caption = models.CharField(max_length=255)
+    purpose = models.TextField()
